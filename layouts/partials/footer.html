@@ -18,7 +18,7 @@
   </span>
   <span class="division">|</span>
   <span class="theme-info">
-    {{ T "theme" }} - 
+    {{ T "theme" }} -
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
@@ -39,12 +39,20 @@
 
   <span class="copyright-year">
     {{- $current := now.Format "2006" }}
-    &copy; 
+    &copy;
     {{ if ne .Site.Params.since $current -}}
-      {{ .Site.Params.since }} - 
+      {{ .Site.Params.since }} -
     {{ end }}
     {{- $current -}}
     <span class="heart"><i class="iconfont icon-heart"></i></span><!--
     --><span>{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}</span>
   </span>
 </div>
+<script>
+  (function(n, e, m, E, a, $) {
+    n[E]=n[E]||function(){(n[E].q=n[E].q||[]).push(arguments)};$=e.createElement(m);
+    $.id=E;$.src=a;$.async=1;m=e.getElementsByTagName(m)[0];m.parentNode.insertBefore($,m)
+  })(window, document, "script", "nemea", "https://defn.nemea.co/track.js");
+
+  nemea("view");
+</script>

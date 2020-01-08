@@ -3,7 +3,8 @@
 // ==============================
 
 .post-content {
-  word-wrap: break-word;
+  word-break: normal;
+  word-wrap: normal;
 
   @for $i from 1 through 6 {
     h#{$i} {
@@ -41,7 +42,7 @@
 
   a {
     color: $theme-color;
-    word-break: break-all;
+    word-break: normal;
 
     &:hover {
       border-bottom: $content-link-border;
@@ -107,7 +108,7 @@
       color: $theme-color;
       font-size: 1.1em;
       font-family: $global-serif-font-family;
-    
+
       &:hover {
         border-bottom: $post-readMore-border-bottom;
       }
