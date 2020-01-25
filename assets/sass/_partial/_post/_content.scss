@@ -45,7 +45,7 @@
     word-break: normal;
 
     &:hover {
-      border-bottom: $content-link-border;
+      text-decoration: underline;
     }
 
     &.fancybox {
